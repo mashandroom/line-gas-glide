@@ -27,6 +27,13 @@
                   environment="web"
                   feedback-link="">
     
+      <google-codelab-step label="今日のイメージ" duration="0">
+        <h2 is-upgraded>LINE x GAS x Glide</h2>
+<p class="image-container"><img style="width: 601.70px" src="img/f63fd1cfcd938950.png"></p>
+
+
+      </google-codelab-step>
+    
       <google-codelab-step label="LINE Developers への登録" duration="0">
         <h2 is-upgraded>LINE Developers（<a href="https://developers.line.biz/ja/" target="_blank">https://developers.line.biz/ja/</a>）からログイン</h2>
 <p class="image-container"><img style="width: 601.70px" src="img/faa17261b9332cfc.png"></p>
@@ -65,7 +72,8 @@
 <p><a href="https://docs.google.com/spreadsheets/d/1ZyRyULMww9Ti1VREi9z1q2-aCltCRDM26kVGUUq9F_Y/edit?usp=sharing" target="_blank">配布用：LINE DC 2021 在庫管理</a></p>
 <p class="image-container"><img style="width: 464.00px" src="img/e51af5010776d1c2.png"></p>
 <p class="image-container"><img style="width: 425.00px" src="img/81b212ea1549594b.png"></p>
-<p>スプレッドシート が各自のマイドライブにコピーされます。</p>
+<aside class="special"><p>スプレッドシート が各自のマイドライブにコピーされます。</p>
+</aside>
 
 
       </google-codelab-step>
@@ -73,57 +81,61 @@
       <google-codelab-step label="Glideの準備とアプリ公開" duration="2">
         <h2 is-upgraded>1.アカウント作成</h2>
 <p><a href="https://www.glideapps.com/" target="_blank">https://www.glideapps.com/</a> にアクセスします。<br></p>
-<p>アカウントをまだ持っていない場合は、「Sign in with Google」で連携するスプレッドシートのGoogleアカウントで連携します。</p>
-<p class="image-container"><img style="width: 462.00px" src="img/466b2d0160470da1.png"></p>
+<p>アカウントをまだ持っていない場合は、「Sign in with Google」で先ほどコピーしたスプレッドシートと同じGoogleアカウントで連携します。</p>
+<p class="image-container"><img style="width: 462.00px" src="img/2cc6844883d0f0e4.png"></p>
 <p class="image-container"><img style="width: 498.00px" src="img/5ee82ca8b21337ea.png"></p>
 <h2 is-upgraded>2.アクセス許可</h2>
 <p>GlideからGoogleドライブ上のファイル（スプレッドシート）にアクセスするため、アクセスを許可する必要があります。</p>
-<p class="image-container"><img style="width: 500.00px" src="img/d9a4d25143be0e89.png"></p>
+<p class="image-container"><img style="width: 500.00px" src="img/9e68dff995a5f894.png"></p>
 <h2 is-upgraded>3.新規アプリ作成</h2>
 <p>Glideのダッシュボードが表示されます。「New App」を押しアプリを新規作成します。</p>
-<p class="image-container"><img style="width: 601.70px" src="img/85438be23cfee122.png"></p>
+<p class="image-container"><img style="width: 601.70px" src="img/80d98836afee63a9.png"></p>
 <p>ここではアプリ名を「在庫管理」とし、「Continue」を押します。</p>
-<p class="image-container"><img style="width: 478.00px" src="img/b8784559dbec11c0.png"></p>
+<p class="image-container"><img style="width: 478.00px" src="img/44523849f49ee6a9.png"></p>
 <p>Glideアプリ内で使うデータの元をどこで管理するか？選択します。</p>
 <p>スプレッドシートと連携するので「Google Sheets」を押します。</p>
-<p class="image-container"><img style="width: 540.00px" src="img/3b8ee93fc757f1c6.png"></p>
+<p class="image-container"><img style="width: 540.00px" src="img/a408c4c6bd8b4bbf.png"></p>
 <p>Googleドライブ内のスプレッドシートが表示されますので、本ハンズオン用にコピーしたファイルを選択します。</p>
-<p class="image-container"><img style="width: 601.70px" src="img/1ea3a5504e84ac3f.png"></p>
+<p class="image-container"><img style="width: 601.70px" src="img/fa168313c9d6b682.png"></p>
 <p>以下の様に「在庫管理アプリ」の初期画面が表示されます。</p>
-<p>スプレッドシートのデータがリスト形式で表示されているのが分かります。Glide上でデータの表示方法など見た目をカスタマイズしていきます。</p>
+<p>スプレッドシートのデータがリスト形式で表示されているのが分かります。Glide上でデータの表示方法など見た目をカスタマイズできます。</p>
 <p class="image-container"><img style="width: 601.70px" src="img/db9c11135a5fd915.png"></p>
 <h2 is-upgraded>4.アプリ公開</h2>
 <p>右上にある「Publish」ボタンを押すと、初めて公開する場合は下記画面が表示されますので「Publish App」を押します。</p>
-<p class="image-container"><img style="width: 270.00px" src="img/94ab92a10923d1ff.png"></p>
-<p>APP LINKに任意の名前でアプリの名前（URL）を入力します。このアドレスがアプリのリンクとなり、LIFFの設定の際にもこのURLを指定します。「Copy」を押すことでURLをコピーできます。</p>
-<p class="image-container"><img style="width: 266.00px" src="img/9c56ebab961527fd.png"></p>
+<p class="image-container"><img style="width: 270.00px" src="img/7cd1fd77902cb24e.png"></p>
+<p>APP LINKに任意の名前でアプリの名前（URL）を入力します。このアドレスがアプリのリンクとなり、後ほどLIFFのエンドポイントでもこのURLを指定します。</p>
+<p class="image-container"><img style="width: 266.00px" src="img/9d7cbefd49f54dd2.png"></p>
 
 
       </google-codelab-step>
     
       <google-codelab-step label="LIFF" duration="0">
         <p>続いてLIFFの設定をしていきます。</p>
-<h2 is-upgraded>1.LINEログインチャネルの作成</h2>
+<h2 is-upgraded>1.プロバイダーの作成</h2>
+<p>プロバイダーが未作成の場合はまずはプロバイダーを作成します。</p>
+<p class="image-container"><img style="width: 601.70px" src="img/d7dc789f45d8baa5.png"></p>
+<h2 is-upgraded>2.LINEログインチャネルの作成</h2>
 <p>新規チャネルで「LINEログイン」を作成します。</p>
-<p class="image-container"><img style="width: 601.70px" src="img/2c1f95ad6b88f7be.png"></p>
+<p class="image-container"><img style="width: 601.70px" src="img/50540f489be2997e.png"></p>
 <p>以下の通り入力・設定し、「作成」を押します。</p>
 <p class="image-container"><img style="width: 495.00px" src="img/8a4c3ec8f18d6741.png"></p>
-<h2 is-upgraded>2.LIFFの設定</h2>
+<h2 is-upgraded>3.LIFFの設定</h2>
 <p>チャネルが作成されると以下の画面が表示されます。</p>
 <p>LIFFの設定をしていきましょう。</p>
+<p>エンドポイントURLには、Glideアプリを公開した際のURLを設定します。</p>
 <p><img style="width: 601.70px" src="img/14c8b3346a51deed.png"><br><br>「LIFF」タブを選択し、「追加」を押します。</p>
 <p class="image-container"><img style="width: 601.70px" src="img/513813c3096087d6.png"></p>
 <p>LIFFアプリ追加画面が表示されるので、以下の通り入力していきます。</p>
 <p>入力できたら「追加」を押します。</p>
-<p class="image-container"><img style="width: 327.00px" src="img/f452346703ea4e15.png"></p>
-<h2 is-upgraded>3.公開設定</h2>
-<p>LIFFアプリが追加されますが、非公開の状態のため公開に設定します。</p>
-<p class="image-container"><img style="width: 601.70px" src="img/a2e83213d85359c6.png"></p>
+<p class="image-container"><img style="width: 348.00px" src="img/8d1e4b1634af7276.png"></p>
+<h2 is-upgraded>4.公開設定</h2>
+<p>以上でLIFFアプリが作成されますが、非公開の状態のため公開に設定します。</p>
+<p class="image-container"><img style="width: 601.70px" src="img/a1019bc8ec8e9237.png"></p>
 <p>「非公開」を押すと下記画面が表示されるので「公開」します。</p>
 <p>ステータスが「公開済み」に変更されます。</p>
 <p class="image-container"><img style="width: 601.70px" src="img/90b8d722d54083a8.png"></p>
 <p>以上でLIFFの準備ができました。</p>
-<p>LIFF URLは後で使用しますのでコピーしておくか、此のページに戻れるようにしておいてください。</p>
+<p>LIFF URLは後で使用しますのでコピーしておくか、このページに戻れるようにしておいてください。</p>
 <p>LIFFに初めてアクセスする際に以下認証画面が出ます。</p>
 <p>「許可する」を押してください。</p>
 <p class="image-container"><img style="width: 346.38px" src="img/e26334d9e963aeac.png"></p>
@@ -132,23 +144,21 @@
       </google-codelab-step>
     
       <google-codelab-step label="Messaging API" duration="2">
-        <p>新規プロバイダーを作成します。</p>
-<p class="image-container"><img style="width: 601.70px" src="img/5cdc3e16ec8bb132.png"></p>
-<h2 is-upgraded>1.Messaging APIチャネルを作成</h2>
+        <h2 is-upgraded>1.Messaging APIチャネルを作成</h2>
 <p>チャネルの種類「Messaging API」を選択</p>
-<p class="image-container"><img style="width: 601.70px" src="img/2c1f95ad6b88f7be.png"></p>
+<p class="image-container"><img style="width: 601.70px" src="img/98afc124e29a1d07.png"></p>
 <p class="image-container"><img style="width: 378.00px" src="img/6886c4678b8f7bce.png"></p>
 <p class="image-container"><img style="width: 601.70px" src="img/c3f025880e833600.png"></p>
 <p class="image-container"><img style="width: 601.70px" src="img/76aef7528704a7dd.png"></p>
 <p class="image-container"><img style="width: 552.00px" src="img/81ff1f5703acff4b.png"></p>
 <p>「Message APIの設定」タブから以下の赤枠の部分を編集していきます。</p>
-<p>「Webhook」の設定はスプレッドシート（GAS）をデプロイしてから行います。</p>
+<aside class="special"><p>「Webhook」の設定はスプレッドシート（GAS）をデプロイしてから行います。</p>
+</aside>
 <p class="image-container"><img style="width: 371.00px" src="img/e5323cb6d79427b3.png"></p>
-<h2 is-upgraded>応答メッセージの編集</h2>
-<p>「応答メッセージ」の「編集」を押すと「LINE Official Account Manager」の画面が開きます。</p>
-<p>下記の通り「応答メッセージ」を「オフ」、「Webhook」を「オン」に変更します。</p>
+<h2 is-upgraded>2.応答メッセージの編集</h2>
+<p>「応答メッセージ」の「編集」を押すと「LINE Official Account Manager」の画面が開きます。下記の通り「応答メッセージ」を「オフ」、「Webhook」を「オン」に変更します。</p>
 <p class="image-container"><img style="width: 601.70px" src="img/badd6be59717d295.png"></p>
-<h2 is-upgraded>チャネルアクセストークン発行</h2>
+<h2 is-upgraded>3.チャネルアクセストークン発行</h2>
 <p>LINE Developerコンソールに戻り、チャネルアクセストークンを「発行」します。</p>
 <p class="image-container"><img style="width: 601.70px" src="img/66c2226fe6cddf98.png"></p>
 
@@ -156,13 +166,14 @@
       </google-codelab-step>
     
       <google-codelab-step label="GAS（デプロイ ）" duration="0">
-        <p>コピーしたスプレッドシートを開き、GASのコードを編集していきます。</p>
+        <h2 is-upgraded>1.コードの修正</h2>
+<p>コピーしたスプレッドシートを開き、GASのコードを編集していきます。</p>
 <p class="image-container"><img style="width: 601.70px" src="img/1e12bc496d32d539.png"></p>
 <p>スクリプトエディタが起動します。</p>
 <p>1回のクリックで起動しないことがあるので、その際は再度「スクリプトエディタ」をクリックしてください。</p>
 <p class="image-container"><img style="width: 601.70px" src="img/4bfaaf56ae31558a.png"></p>
 <p>左のメニューから「config.gs」があるのでクリッックします。</p>
-<p>編集する場所は以下3箇所です。</p>
+<p>編集する場所は以下3箇所です。&#34; &#34; は削除しないでください。&#34;と&#34;の間に記載します。</p>
 <p>・スプレッドシートのID（xの部分）</p>
 <p>・チャネルアクセストークン（▲の部分）</p>
 <p>・LIFFのURL（■の部分）</p>
@@ -171,11 +182,10 @@
  LineChanleAccessToken: &#34;▲▲▲▲▲&#34;,
  LiffURL: &#34;■■■■■■■■■&#34;
 }</code></pre>
-<p>・スプレッドシートのID</p>
+<p>・スプレッドシートID</p>
 <p>スプレッドシートを開いているブラウザのURLの以下の <code>xxxxxx</code> 部分です。</p>
-<p>https://docs.google.com/spreadsheets/d/</p>
-<pre><code>xxxxxx</code></pre>
-<p>/edit#gid=0</p>
+<aside class="special"><p>https://docs.google.com/spreadsheets/d/<code>xxxxxx</code>/edit#gid=0</p>
+</aside>
 <p>・チャネルアクセストークンは LINE Developerコンソールで発行した以下の長い文字列です。</p>
 <p class="image-container"><img style="width: 601.70px" src="img/66c2226fe6cddf98.png"></p>
 <p>・LIFFのURLはLINEログインチャネルで作成した下記LIFF URLです。</p>
@@ -184,7 +194,7 @@
 <p class="image-container"><img style="width: 298.00px" src="img/223db3d59f055b8a.png"></p>
 <p>「保存」ボタンを押して保存すると●印が消えます。</p>
 <p class="image-container"><img style="width: 223.00px" src="img/aae35b96aa6da6e3.png"></p>
-<p>デプロイ </p>
+<h2 is-upgraded>2.デプロイ</h2>
 <p>保存したらデプロイをします。</p>
 <p>デプロイとはWebアプリ公開することで、LINEからGASにアクセスできるようになります。</p>
 <p class="image-container"><img style="width: 288.00px" src="img/39c6786bf47ebe9e.png"></p>
@@ -195,7 +205,7 @@
 <p class="image-container"><img style="width: 458.00px" src="img/7e16f644d0322291.png"></p>
 <p class="image-container"><img style="width: 420.00px" src="img/7793a5eedc4f9267.png"></p>
 <p class="image-container"><img style="width: 601.70px" src="img/4b335f40d3a76ed5.png"></p>
-<p>デプロイ が完了したら、上記ウェブアプリ URLをWebhookに設定します。</p>
+<p>デプロイ が完了したら、上記ウェブアプリ URLをLINE Messaging APIのWebhookに設定します。</p>
 
 
       </google-codelab-step>
@@ -213,8 +223,10 @@
       </google-codelab-step>
     
       <google-codelab-step label="実際に動かして見ましょう" duration="0">
-        <p>ボットを友達追加し、在庫一覧や追加などを押していくと</p>
-<p class="image-container"><img style="width: 353.50px" src="img/c2f5faca7c02d422.png"></p>
+        <p>ボットを友達追加し、在庫一覧や追加などを押して動かして見ましょう。</p>
+<p>LIFFやGlideの設定が正常に行われていると「LIFF」を押すとLINE内にGlideアプリが起動します。</p>
+<p class="image-container"><img style="width: 341.50px" src="img/885860843bf37c23.png"></p>
+<p class="image-container"><img style="width: 343.39px" src="img/c6c33efb91c257d8.png"></p>
 
 
       </google-codelab-step>
