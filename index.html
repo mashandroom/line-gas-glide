@@ -131,7 +131,8 @@
 <p>スプレッドシートとも連携することができるため、ここではGlideでアプリを作成します。</p>
 </aside>
 <h2 is-upgraded>1.アカウント作成</h2>
-<p><a href="https://www.glideapps.com/" target="_blank">https://www.glideapps.com/</a> にアクセスします。<br></p>
+<p><a href="https://www.glideapps.com/" target="_blank">https://www.glideapps.com/</a> にアクセスし、右上にある「Log in」を押します。</p>
+<p class="image-container"><img style="width: 452.00px" src="img/3e29755be611342b.png"></p>
 <p>アカウントをまだ持っていない場合は、「Sign in with Google」で先ほどコピーしたスプレッドシートと同じGoogleアカウントで連携します。</p>
 <p class="image-container"><img style="width: 462.00px" src="img/2cc6844883d0f0e4.png"></p>
 <p class="image-container"><img style="width: 498.00px" src="img/5ee82ca8b21337ea.png"></p>
@@ -219,7 +220,7 @@
 
       </google-codelab-step>
     
-      <google-codelab-step label="Messaging API" duration="2">
+      <google-codelab-step label="Messaging API" duration="0">
         <p>Messaging APIって？</p>
 <p><a href="https://developers.line.biz/ja/docs/messaging-api/overview/" target="_blank">https://developers.line.biz/ja/docs/messaging-api/overview/</a></p>
 <aside class="special"><p>Messaging APIを使うことで、LINE上でユーザーが送信したメッセージに基づいて、プログラムを動作させたり、プログラムからユーザーにメッセージを返信することができます。ここではメッセージの送信先がスプレッドシート （GAS）のプログラムになります。</p>
@@ -237,6 +238,7 @@
 <p class="image-container"><img style="width: 552.00px" src="img/81ff1f5703acff4b.png"></p>
 <p>「Message APIの設定」タブから以下の赤枠の部分を編集していきます。</p>
 <aside class="special"><p>「Webhook」の設定はスプレッドシート（GAS）をデプロイしてから行います。</p>
+<p>ここでは「応答メッセージ」「チャネルアクセストークン」の設定をします。</p>
 </aside>
 <p class="image-container"><img style="width: 371.00px" src="img/8ec1c4beb83cee23.png"></p>
 <h2 is-upgraded>2.応答メッセージの編集</h2>
@@ -258,7 +260,7 @@
       <google-codelab-step label="GAS（デプロイ ）" duration="0">
         <p>GASって？</p>
 <p>Google Apps Scriptの略で、Googleが提供しているプログラミング言語です。GASを使うことで、Googleの色々なサービス（GmailやGoogleカレンダーなど）をプログラムでから操作することができます。</p>
-<aside class="special"><p>ここではGASを使って、スプレッドシートのセルの値を読みとったり、セルの値を更新したりしています。それ以外にも、LINEで送信したメッセージをGASで受け取り、LINEにメッセージを応答しています。</p>
+<aside class="special"><p>ここではGASを使って、スプレッドシートのセルの値を読みとったり、セルの値を更新したりしています。それ以外にも、LINEで送信したメッセージをGASで受け取り、LINEにメッセージを応答するプログラムなどが書かれています。</p>
 </aside>
 <h2 is-upgraded>1.プログラムの修正</h2>
 <p>コピーしたスプレッドシートを開き、GASのプログラムを編集していきます。</p>
@@ -291,12 +293,12 @@
 <p class="image-container"><img style="width: 601.70px" src="img/43ac38c7a0bc4b83.png"></p>
 <p>変更したら必ず「保存」をしましょう。</p>
 <p>変更が反映されていないと正常に動作しません。下記の様に保存されていない状態ではファイル名の横に●印がつきます。</p>
-<p class="image-container"><img style="width: 298.00px" src="img/223db3d59f055b8a.png"></p>
+<p class="image-container"><img style="width: 298.00px" src="img/761bc9e960ed8bbb.png"></p>
 <p>「保存」ボタンを押して保存すると●印が消えます。</p>
 <p class="image-container"><img style="width: 223.00px" src="img/aae35b96aa6da6e3.png"></p>
 <h2 is-upgraded>2.デプロイ</h2>
 <p>保存したらデプロイをします。</p>
-<p>デプロイとはアプリ公開することで、LINEで送ったメッセージをGASで受け取れるようにします。</p>
+<p>デプロイとはアプリを公開することを言います。公開することで、LINEで送ったメッセージがGASで受け取れるようになります。</p>
 <p>右上にある「デプロイ 」の▼を押し、「デプロイを管理」を押します。</p>
 <p class="image-container"><img style="width: 288.00px" src="img/39c6786bf47ebe9e.png"></p>
 <p>以下の画面が表示されるので、「デプロイメントの作成」を押します。<img style="width: 601.70px" src="img/24189785b6639f35.png"></p>
@@ -344,15 +346,18 @@
 <p>LINE Developers Messaging API設定にQRコードがあります。</p>
 <p>スマホで読み取ってボットを友達追加してみましょう。</p>
 <p>在庫一覧や追加などを押して動かして見ましょう。</p>
-<p>LIFFやGlideの設定が正常に行われていると「LIFF」を押すとLINE内にGlideアプリが起動します。<br><img style="width: 346.38px" src="img/e26334d9e963aeac.png"></p>
+<p>本日のイメージはこんな感じでした。</p>
+<p class="image-container"><img style="width: 601.70px" src="img/199dfe5ab5f04690.png"></p>
+<p>LINEから送ったメッセージ（操作）はGASというプログラム（スクリプト）を通じて、スプレッドシートが読み書きされます。「追加」や「発注」など操作した結果がスプレッドシートに記録されていきますので、合わせて見てみましょう。</p>
 <p class="image-container"><img style="width: 341.50px" src="img/885860843bf37c23.png"></p>
 <ul>
 <li>在庫一覧<br>スプレッドシートのstockシートで管理されている商品と在庫数を表示します。<br>stockシート記載の商品のみ操作できますので、増やしてみたい商品があればstockシートに商品名と在庫数を追加して試してみてください。</li>
 <li>追加<br>在庫を追加する商品名と数を送信すると、スプレッドシートの当該商品の在庫数が増えます。</li>
 <li>引出<br>在庫から引出する商品名と数を送信すると、スプレッドシートの当該商品の在庫数が減ります。<br></li>
 <li>発注<br>発注する商品名と数を送信するとorderシートに記録されます。<br>ここでは記録するのみですが、Gmaiと連携して業者に発注メールを送るなどもできそうですね。</li>
-<li>LIFF<br>Glideアプリがトークルーム内に表示されます。<br> stock：在庫一覧<br> order：発注の記録<br> log：追加と引出の記録</li>
+<li>LIFF<br>Glideアプリがトークルーム内に表示されます。<br>LIFFやGlideの設定が正常に行われていると「LIFF」を押すとLINE内にGlideアプリが起動します。</li>
 </ul>
+<p><img style="width: 346.38px" src="img/e26334d9e963aeac.png"><br> stock：在庫一覧<br> order：発注の記録<br> log：追加と引出の記録</p>
 <p class="image-container"><img style="width: 305.00px" src="img/bb1148991dbdae60.png"></p>
 <aside class="special"><p>LINE bot での在庫操作の結果は一度スプレッドシートに反映されますが、スプレッドシートの更新がすぐにGlideアプリ上に反映されないことがあります。</p>
 <p>しばらくするとGlideアプリ上でも変更されているのがわかると思います。</p>
@@ -368,6 +373,8 @@
     
       <google-codelab-step label="いかがでしたでしょうか？" duration="0">
         <p>ご質問等、お気軽にご連絡ください。</p>
+<p><a href="mailto:kinoko@mashandroom.org" target="_blank">kinoko@mashandroom.org</a></p>
+<p><a href="https://www.facebook.com/happy.happy.children/" target="_blank">https://www.facebook.com/happy.happy.children/</a></p>
 
 
       </google-codelab-step>
